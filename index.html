@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>George Rechner</title>
+  </head>
+  <body>
+
+    <h1>George Rechner</h1>
+    <!-- Platte -->
+    <div class="div1">      
+      <h2>Platte €</h2>
+      <input
+        type="number"
+        step="0.1"
+        id="price_platte"
+        name="Preis Platte"
+        value="15.5"
+        oninput="Calculate()"
+      />
+    </div>
+
+    <div class="div2">
+      <button
+        id="btn_platte_minus"
+        type="button"
+        onclick="function_platte_mimus()"
+      >
+        -
+      </button>
+      <p id="number_platte">1</p>
+      <button
+        id="btn_platte_plus"
+        type="button"
+        onclick="function_platte_plus()"
+      >
+        +
+      </button>
+    </div>
+
+    <!-- Bier -->
+    <div class="div1">
+      <h2>Bier €</h2>
+      <input
+        type="number"
+        step="0.1"
+        id="price_bier"
+        name="Preis Bier"
+        value="4.5"
+        oninput="Calculate()"
+      />
+    </div>
+
+    <div class="div2">
+      <button id="btn_bier_minus" type="button" onclick="function_bier_mimus()">
+        -
+      </button>
+      <p id="number_bier">1</p>
+      <button id="btn_bier_plus" type="button" onclick="function_bier_plus()">
+        +
+      </button>
+    </div>
+
+    <!-- Trinkgeld -->
+    <div class="div2">
+      <h2>Trinkgeld %</h2>
+      <button id="btn_tip_minus" type="button" onclick="function_tip_mimus()">
+        -
+      </button>
+      <input
+        type="number"
+        id="number_tip"
+        name="Trinkgeld"
+        value="20"
+        oninput="Calculate()"
+      />
+      <button id="btn_tip_plus" type="button" onclick="function_tip_plus()">
+        +
+      </button>
+    </div>
+
+    <div id="div_sum">
+      <h1 id="sum">Gesamt</h>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

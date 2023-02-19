@@ -1,0 +1,61 @@
+body {
+  background-color: #221a1a;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #008cba;
+  font-size: 3em;
+  width: 80px;
+  height: 60px;
+  border-radius: 20px;
+  border-style: none;
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 30%;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  background-color: rgb(48, 48, 42);
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-left-style: none;
+  border-right-style: none;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: rgb(89, 225, 235);
+}
+
+.div2 {
+  border-bottom-style: solid;
+}
+
+#div_sum {
+  justify-content: center;
+}
