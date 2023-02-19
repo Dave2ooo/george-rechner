@@ -61,6 +61,11 @@ function function_tip_plus() {
   Calculate();
 }
 
+function function_read_tip() {
+  num_tip = parseFloat(element_number_tip.value);
+  Calculate();
+}
+
 function Calculate() {
   element_number_platte.innerHTML = num_platte;
   element_number_bier.innerHTML = num_bier;
